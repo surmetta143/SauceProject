@@ -48,6 +48,9 @@ class LoginPage:
     def Verify_Remove_btn(self):
         return self.driver.find_element(*self.remove_btn).is_displayed()
 
+    def Verify_login_btn(self):
+        return self.driver.find_element(*self.login_button).is_displayed()
+
     def click_Shopping_cart(self):
         self.driver.find_element(*self.Shopping_cart).click()
         time.sleep(5)

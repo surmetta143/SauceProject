@@ -67,5 +67,6 @@ def test_order_success(driver):
     x.enter_first_name(data["firstname"])
     x.enter_last_name(data["lastbname"])
     x.enter_zip_code(data ["zipcode"])
+    x.enter_zip_code(data["zipcode"])
 
 

@@ -67,5 +67,24 @@ def test_login_suresh():
     driver.quit()
 
 
+def test_login_test_01():
+    driver = webdriver.Chrome()
+    driver.get("https://jovial-buttercream-da99f3.netlify.app/")
+    time.sleep(5)
+    driver.find_element(By.ID, "Courses").is_displayed()
+
+    driver.find_element(By.ID, "Courses").click()
+    time.sleep(3)
+
+    driver.find_element(By.XPATH, "//button[@onclick='openForm('login')']").is_displayed()
+    driver.quit()
+
+
+
+
+
+
+
+
 
 
